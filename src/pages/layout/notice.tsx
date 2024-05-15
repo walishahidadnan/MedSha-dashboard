@@ -144,3 +144,14 @@
 // };
 
 // export default HeaderNoticeComponent;
+import React from 'react';
+
+const notice = () => {
+  return (
+    <>
+      <h2>working</h2>
+    </>
+  );
+};
+
+export default notice;
