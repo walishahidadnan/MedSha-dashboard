@@ -12,14 +12,15 @@ import { ReactComponent as LanguageSvg } from '@/assets/header/language.svg';
 import { ReactComponent as MoonSvg } from '@/assets/header/moon.svg';
 import { ReactComponent as SunSvg } from '@/assets/header/sun.svg';
 import { ReactComponent as ZhCnSvg } from '@/assets/header/zh_CN.svg';
-import AntdSvg from '@/assets/logo/antd.svg';
-import ReactSvg from '@/assets/logo/react.svg';
+// import AntdSvg from '@/assets/logo/antd.svg';
+// import ReactSvg from '@/assets/logo/react.svg';
+import LogoMed from '@/assets/logo/MedShaLogo-blue .png';
 import { LocaleFormatter, useLocale } from '@/locales';
 import { setGlobalState } from '@/stores/global.store';
 import { setUserItem } from '@/stores/user.store';
 
 import { logoutAsync } from '../../stores/user.action';
-import HeaderNoticeComponent from './notice';
+// import HeaderNoticeComponent from './notice';
 
 const { Header } = Layout;
 
@@ -76,9 +77,13 @@ const HeaderComponent: FC<HeaderProps> = ({ collapsed, toggle }) => {
   return (
     <Header className="layout-page-header bg-2" style={{ backgroundColor: token.token.colorBgContainer }}>
       {device !== 'MOBILE' && (
-        <div className="logo" style={{ width: collapsed ? 80 : 200 }}>
-          <img src={ReactSvg} alt="" style={{ marginRight: collapsed ? '2px' : '20px' }} />
-          <img src={AntdSvg} alt="" />
+        <div className="logo" style={{ width: collapsed ? 120 : 200 }}>
+          <img
+            src={LogoMed}
+            alt=""
+            style={{ marginRight: collapsed ? '0px' : '0px', width: '150px', height: '150px' }}
+          />
+          {/* <img src={AntdSvg} alt="" /> */}
         </div>
       )}
       <div className="layout-page-header-main">
@@ -97,7 +102,7 @@ const HeaderComponent: FC<HeaderProps> = ({ collapsed, toggle }) => {
               })}
             </span>
           </Tooltip>
-          <HeaderNoticeComponent />
+          {/* <HeaderNoticeComponent /> */}
           <Dropdown
             menu={{
               onClick: info => selectLocale(info),
