@@ -38,7 +38,7 @@ const LoginForm: FC = () => {
   return (
     <div className="login-page">
       <Form<LoginParams> onFinish={onFinished} className="login-page-form" initialValues={initialValues}>
-        <h2>REACT ANTD ADMIN</h2>
+        <h2>MedSha DashBoard</h2>
         <Form.Item
           name="username"
           rules={[
