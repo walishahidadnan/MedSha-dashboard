@@ -69,6 +69,7 @@ const SalePercent: FC<{ loading: boolean }> = ({ loading }) => {
   return (
     <Card
       className="salePercent"
+      style={{ marginTop: '10px' }}
       title={formatMessage({ id: 'app.dashboard.salePercent.proportionOfSales' })}
       loading={loading}
       extra={
