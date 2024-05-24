@@ -64,12 +64,16 @@ const Trend: FC<TrendProps> = ({ wow, dod, style = {} }) => {
     <div className="trend" style={style}>
       <div className="trend-item">
         <span className="trend-item-label">{formatMessage({ id: 'app.dashboard.overview.wowChange' })}</span>
-        <span className="trend-item-text">{wow}</span>
+        <span className="trend-item-text" style={{ color: 'gray' }}>
+          {wow}
+        </span>
         <CaretUpIcon color="#f5222d" />
       </div>
       <div className="trend-item">
         <span className="trend-item-label">{formatMessage({ id: 'app.dashboard.overview.dodChange' })}</span>
-        <span className="trend-item-text">{dod}</span>
+        <span className="trend-item-text " style={{ color: 'gray' }}>
+          {dod}
+        </span>
         <CaretDownIcon color="#52c41a" />
       </div>
     </div>
@@ -93,7 +97,9 @@ interface FieldProps {
 const Field: FC<FieldProps> = ({ name, number }) => (
   <div className="field">
     <span className="field-label">{name}</span>
-    <span className="field-number">{number} </span>
+    <span className="field-number " style={{ color: 'gray' }}>
+      {number}{' '}
+    </span>
   </div>
 );
 

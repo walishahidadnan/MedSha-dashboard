@@ -1,15 +1,8 @@
 export const en_US_documentation = {
   'app.documentation.introduction.title': 'Introduction',
   'app.documentation.introduction.description': `
-    react-antd-admin is an enterprise - level background management system template based on react and ant-design.
-    Use the latest React Hooks API instead of the traditional class API,
-    Typescript was also used to standardize code readability and maintainability, enhancing development efficiency,
-    Use redux as the global state management library.
-    This project allows you to quickly develop a new project template and remove some of the code according to your needs. 
-    If you don't have a need to use templates,
-    This project will also be a good resource for learning react and typescript.
-    In addition, if you think this project is worth optimizing or modifying, 
-    please feel free to ask, my contact information will be shown at the bottom of the article.
+    MedSha is a Admin dashboard to create a medical solution for user to engage and make them a easy solution for using the app for making a appoitment with docter or finding a docter for check-up or making a appoitment for a test (blood test, sugar test, endascopy, ultrasound) they can find a suiutable clinc or a center for themself its a admin panel for docter or staf to use the app is on the way.
+    the dashboard design is taken from: react-antd-admin.
   `,
   'app.documentation.catalogue.title': 'Catalogue',
   'app.documentation.catalogue.description': 'Click the catalogue to quickly reach the specified content',
