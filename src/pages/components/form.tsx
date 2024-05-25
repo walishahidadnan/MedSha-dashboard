@@ -14,11 +14,13 @@ interface Data {
 const FormPage: FC = () => {
   const onFinish = (value: any) => {
     console.log(value);
+    alert(`Thanks For the Data`);
   };
 
   return (
     <MyForm<Data> onFinish={onFinish}>
-      <MyForm.Item label="测试" required name="test" type="input" />
+      <MyForm.Item label="Name" required name="test" type="input" />
+      <MyForm.Item label="Message" required name="test" type="input" />
       <MyForm.Item {...tailLayout}>
         <MyButton type="primary" htmlType="submit">
           Submit
