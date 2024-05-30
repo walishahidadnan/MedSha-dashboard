@@ -20,7 +20,8 @@ const FormPage: FC = () => {
   return (
     <MyForm<Data> onFinish={onFinish}>
       <MyForm.Item label="Name" required name="test" type="input" />
-      <MyForm.Item label="Message" required name="test" type="input" />
+      <MyForm.Item label="Email" required name="email" type="input" />
+      <MyForm.Item label="Message" required name="Mesage" type="input" />
       <MyForm.Item {...tailLayout}>
         <MyButton type="primary" htmlType="submit">
           Submit
