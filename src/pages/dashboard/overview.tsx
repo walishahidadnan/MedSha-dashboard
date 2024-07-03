@@ -118,7 +118,7 @@ const Overview: FC<{ loading: boolean }> = ({ loading }) => {
       <ColCard
         loading={loading}
         metaName={formatMessage({ id: 'app.dashboard.overview.visits' })}
-        metaCount="8846"
+        metaCount="9846"
         body={
           <ResponsiveContainer>
             <AreaChart data={data}>
@@ -133,7 +133,7 @@ const Overview: FC<{ loading: boolean }> = ({ loading }) => {
       <ColCard
         loading={loading}
         metaName={formatMessage({ id: 'app.dashboard.overview.payments' })}
-        metaCount="6560"
+        metaCount="6060"
         body={
           <ResponsiveContainer>
             <BarChart data={data}>
@@ -148,8 +148,8 @@ const Overview: FC<{ loading: boolean }> = ({ loading }) => {
       <ColCard
         loading={loading}
         metaName={formatMessage({ id: 'app.dashboard.overview.operationalEffect' })}
-        metaCount="8846"
-        body={<Progress strokeColor="#58BFC1" percent={85} />}
+        metaCount="8006"
+        body={<Progress strokeColor="#58BFC1" percent={80} />}
         footer={<Trend style={{ position: 'inherit' }} wow="12%" dod="12%" />}
       />
     </Row>
