@@ -16,6 +16,9 @@ const DocumentationPage: FC = () => {
         <Paragraph>
           <LocaleFormatter id="app.documentation.introduction.description" />
         </Paragraph>
+        <Paragraph>
+          <LocaleFormatter id="app.documentation.introduction.subdescription" />
+        </Paragraph>
       </Typography>
     </div>
   );
