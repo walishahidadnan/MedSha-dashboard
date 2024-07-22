@@ -18,6 +18,7 @@ const CustomTooltip: FC<any> = ({ active, payload, label }) => {
   if (active) {
     const { value: value1, stroke: stroke1 } = payload[0];
     const { value: value2, stroke: stroke2 } = payload[1];
+    const { value: value3, stroke: stroke3 } = payload[2];
 
     return (
       <div className="customTooltip">
@@ -30,6 +31,10 @@ const CustomTooltip: FC<any> = ({ active, payload, label }) => {
           <li key="payments">
             <Badge color={stroke2} />
             <LocaleFormatter id="app.dashboard.timeline.payments" /> {value2}
+          </li>
+          <li key="Insigths">
+            <Badge color={stroke3} />
+            <LocaleFormatter id="app.dashboard.timeline.payments" /> {value3}
           </li>
         </ul>
       </div>
