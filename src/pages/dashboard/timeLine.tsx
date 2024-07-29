@@ -32,6 +32,10 @@ const CustomTooltip: FC<any> = ({ active, payload, label }) => {
             <Badge color={stroke2} />
             <LocaleFormatter id="app.dashboard.timeline.payments" /> {value2}
           </li>
+          <li key="orders">
+            <Badge color={stroke3} />
+            <LocaleFormatter id="app.dashboard.timeline.payments" /> {value3}
+          </li>
         </ul>
       </div>
     );
